@@ -1,0 +1,155 @@
+
+/* Card layout wrapper */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover effect for interactive feel */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ===================================================
+   2. CARD IMAGE STYLES
+   =================================================== */
+
+/* Wrapper for phone images */
+.card-image {
+    width: 100%;
+    height: 180px; /* Adjust height based on your layout preference */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa; /* Placeholder background color while images load */
+}
+
+/* Ensures pictures fill the area cleanly without stretching */
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fits image proportion, cropping excess neatly */
+    display: block;
+}
+
+/* ===================================================
+   3. TEXT & BUTTON STYLES
+   =================================================== */
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Styles the link/anchor tag to look like a solid blue button */
+.card .btn {
+    display: inline-block;
+    background-color: #0066cc; /* Matches your current blue button color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.card .btn:hover {
+    background-color: #004fb3; /* Slightly darker shade on hover */
+}
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a; /* Dark background matching your original design */
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+header {
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Products Section Heading */
+.products-section h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.products-section p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* Product Cards Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #ffffff;
+    color: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #f1f5f9;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.4;
+}

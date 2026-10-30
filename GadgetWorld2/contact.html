@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Mobile Store</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/head.css">
+</head>
+<body>
+    <header class="site-header">
+      <div class="navbar">
+      <div class="brand">
+        <img src="images/logo.jpeg" alt="Gadget world Logo" >
+        <span class="brand-text"> Gadget World </span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" >Home</a> </li>
+          <li><a href="shop.html" >Shop</a></li>
+          
+          <li><a href="About Us.html" >About Us</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+        <div class="search-container" >
+            <input type="text"  placeholder="Search" class="nav-search" />
+        </div>
+     </div>
+ </header>
+     <main class="container">
+
+        <!-- Page Title & Intro -->
+        <section class="intro">
+            <h1>Get in Touch</h1>
+            <p>Have questions about a smartphone or need support? We are here to help!</p>
+        </section>
+
+        <!-- Main Grid Container (Left side info, Right side form) -->
+        <div class="contact-wrapper">
+
+            <!-- LEFT SIDE: Contact Information -->
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                
+                <div class="info-item">
+                    <h3>📍  <strong>Store Address : </strong></h3>
+                    <p>  William Street , Kisa Kya Maria Building , Shop K332 level 1</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>📞 <strong> Phone Number :</strong></h3> 
+                    <p>0704711644 / 0709011447</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>✉️ <strong> Email Us : </strong></h3> 
+                    <p>gadgetworld@gmail.com</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>🕒 <strong></strong> Working Hours : </h3> 
+                    <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                    <p>Sunday: Closed [OPEN ON SPECIAL ORDER]</p>
+                </div>
+            </section>
+
+
+            <!-- RIGHT SIDE: Contact Form -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message or Visit us today</h2> 
+
+                <form action="#" method="POST" class="contact-form">
+                    
+                    <!-- Full Name Field -->
+                    <div class="form-group"> 
+                        <label for="name">Full Name</label> 
+                        <input type="text" id="name" name="name" placeholder="John Doe" required> 
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label> 
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <!-- Phone Number Field -->
+                    <div class="form-group">
+                        <label for="phone">Phone Model / Phone Number</label> 
+                        <input type="tel" id="phone" name="phone" placeholder="+1234567890"> 
+                    </div>
+
+                    <!-- Subject Dropdown -->
+                    <div class="form-group"> 
+                        <label for="subject">Reason for Contact</label> 
+                        <select id="subject" name="subject"> 
+                            <option value="sales">Inquiring to Buy a Phone</option> 
+                            <option value="repair">Phone Repair / Service</option> 
+                            <option value="warranty">Warranty Claim</option> 
+                            <option value="other">Other Inquiry</option> 
+                        </select> 
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="form-group">
+                        <label for="message">Your Message</label> <br/>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..."></textarea> 
+                    </div>
+        
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Send Message</button> 
+
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+    
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="brand-infos">
+          <h3>Gadget World</h3>
+          <p> Genuine is affordable</p>
+        </div>
+        <div class="footer-column"> 
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="home.html">Home</a> </li>
+           <li><a href="shop.html">Shop</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+           <li><a href="contact.html" >Contact</a></li>
+           <li><a href="FAQ.html">FAQ</a></li>
+           <li><a href="Shop cat"> Shop Cat</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Samsung phones</a></li>
+            <li><a href="#">Iphones</a></li>
+            <li><a href="#">Google pixels</a></li>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Power banks</a></li>
+            <li><a href="#">Phone accesories</a></li>
+            <li><a href="#">Super fast chargers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer contact-info">
+          <h4>Shop with us</h4>
+          <p><i class="fa-solid fa-location-dot contact-icon"></i> Kampala, Uganda</p>
+          <p><i class="fa-solid fa-envelope contact-icon"></i> info@gadgetworld.com</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+       <p> &copy; 2026 GADGET WORLD  </p>
+      </div>
+    </footer>
+
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdownItem = document.querySelector('.dropdown-item');
+    const dropdownLink = dropdownItem.querySelector('a');
+
+    // Listen for a click/tap on the main navigation link
+    dropdownLink.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevents the browser from instantly following the link URL
+      event.stopPropagation(); // Stops the click from hitting parent elements
+      
+      // Toggle the dropdown visibility
+      dropdownItem.classList.toggle('show-dropdown');
+    });
+
+    // Close the dropdown automatically if the user clicks anywhere else on the screen
+    document.addEventListener('click', function () {
+      dropdownItem.classList.remove('show-dropdown');
+    });
+  });
+</script>
+</body>
+</html>

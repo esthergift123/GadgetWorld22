@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/About us.css">
+</head>
+<body>
+    <header class="site-header">
+      <div class="navbar">
+      <div class="brand">
+        <img src="images/logo.jpeg" alt="Gadget world Logo" >
+        <span class="brand-text"> Gadget World </span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" >Home</a> </li>
+          <li><a href="shop.html" >Shop</a></li>
+         
+          <li><a href="About Us.html" class="active">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+        <div class="search-container" >
+            <input type="text"  placeholder="Search" class="nav-search" />
+        </div>
+     </div>
+ </header>
+    <main class="container">
+
+        <!-- Page Intro -->
+        <section class="intro">
+            <h1>About Our Mobile Store</h1>
+            <p>Your trusted destination for genuine smartphones, accessories, and expert mobile support.</p>
+        </section>
+
+        <!-- Story Section -->
+        <section class="about-story">
+            <div class="story-text">
+                <h2>Our Story</h2>
+                <p>Founded with a passion for technology, Mobile Store started as a small local tech hub and has grown into a leading online provider of premium smartphones. We believe that everyone deserves access to top-tier mobile technology without the hassle.</p>
+                <p>Whether you're looking for the latest flagship Samsung or iPhone, reliable Google Pixel devices, or fast chargers to keep you powered up, we carefully test and verify every product we sell.</p>
+            </div>
+        </section>
+
+        <!-- Core Values / Why Choose Us -->
+        <section class="values-section">
+            <h2>Why Choose Us?</h2>
+            
+            <div class="values-grid">
+                
+                <div class="value-card">
+                    <h3>💯 100% Genuine</h3>
+                    <p>All our phones and accessories are factory-sealed, original, and come with valid manufacturer warranties.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>🤝 Customer First</h3>
+                    <p>Our support team is always ready to help you choose the right phone or guide you through repairs.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>🚀 Fast & Secure Delivery</h3>
+                    <p>We package your devices securely and ship them quickly so you can start using your tech right away.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="brand-infos">
+          <h3>Gadget World</h3>
+          <p> Genuine is affordable</p>
+        </div>
+        <div class="footer-column"> 
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="home.html">Home</a> </li>
+           <li><a href="shop.html">Shop</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+           <li><a href="contact.html" >Contact</a></li>
+           <li><a href="FAQ.html">FAQ</a></li>
+           <li><a href="Shop cat"> Shop Cat</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Samsung phones</a></li>
+            <li><a href="#">Iphones</a></li>
+            <li><a href="#">Google pixels</a></li>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Power banks</a></li>
+            <li><a href="#">Phone accesories</a></li>
+            <li><a href="#">Super fast chargers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer contact-info">
+          <h4>Shop with us</h4>
+          <p><i class="fa-solid fa-location-dot contact-icon"></i> Kampala, Uganda</p>
+          <p><i class="fa-solid fa-envelope contact-icon"></i> info@gadgetworld.com</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+       <p> &copy; 2026 GADGET WORLD  </p>
+      </div>
+    </footer>
+
+
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdownItem = document.querySelector('.dropdown-item');
+    const dropdownLink = dropdownItem.querySelector('a');
+
+    // Listen for a click/tap on the main navigation link
+    dropdownLink.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevents the browser from instantly following the link URL
+      event.stopPropagation(); // Stops the click from hitting parent elements
+      
+      // Toggle the dropdown visibility
+      dropdownItem.classList.toggle('show-dropdown');
+    });
+
+    // Close the dropdown automatically if the user clicks anywhere else on the screen
+    document.addEventListener('click', function () {
+      dropdownItem.classList.remove('show-dropdown');
+    });
+  });
+</script>
+</body>
+</html>

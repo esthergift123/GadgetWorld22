@@ -1,0 +1,284 @@
+@import url('https://googleapis.com');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  display:block;
+}
+
+.site-header {
+  background: rgb(248, 242, 233);
+  border-bottom: 1px solid #e4e1dc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar{
+  width:100%;
+  height: 70px;
+  margin:0 auto;
+  display:flex;
+  max-width: 1400px;
+  background-color: rgb(248, 238, 244);
+  justify-content: space-between;
+  align-items: center;
+  padding:  15px 3%;
+  box-shadow: 0 2px 5px rgba(0,0, 0, 0.1);
+}
+
+.site-header,
+.navbar{
+    margin-bottom: 0 !important;
+   
+}
+
+.brand{
+    align-items: center;
+    display: flex !important;
+    gap: 10px;
+}
+
+.brand img{
+ height: 69px;
+ width: auto; 
+ display: block;
+ mix-blend-mode: multiply; /* removes the white background that the logo had */
+}
+
+.brand-text{
+  font-family: 'Great Vibes, cursive !important';
+  font-size: 20px;
+  font-weight: bold;
+  color: #24165e;
+  text-decoration: none;
+  padding-right: 50px;
+}
+
+/* targetting the list container itself*/
+.main-nav ul{
+  list-style-type: none;/*removes the bullet points completely*/
+  margin:0 auto !important;
+  padding: 0 !important;
+  display:flex !important; /* lines up the <li> items horizontally instead of vertically */
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center !important;
+  flex: 2;
+  flex-direction: row !important;
+}
+
+/*target individual list spacing items*/
+.main-nav ul li {
+  margin-right: 20px;
+}
+
+/* style the text inside the horizontal links*/
+.main-nav ul li a {
+  text-decoration: none; /* removes the default text underline*/
+  color:#2c2520;
+  font-weight: bold;
+  font-size: 18px;
+  background: transparent; /* this removes the block color*/
+  padding:10px 0;/* creates a comfortable clickable box around text*/
+  border-radius: 4px;/*rounds the corners*/ 
+  transition:color 0.3s ease;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0px;
+}
+
+/* accent change when a user hovers mouse over links */
+.main-nav ul li a:hover,
+.main-nav ul li a.active{
+  color:#c0337e;
+}
+
+.search-container{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.nav-search{
+    padding: 10px 15px !important;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    width: 180px !important;
+    height: auto;
+    box-sizing: border-box;
+    padding-inline: 2px;
+}
+
+.dropdown-item{
+    position: relative;
+}
+
+.Dropdown-menu{
+    display: none;  /* keeps them completely hidden by default */
+    position: absolute;
+    top: 100%; /* drops it directly under the parent word */
+    left: 50%; /* centers it relative to the parent text */
+    transform: translateX(-50%); /* perfect horizontal alignment */
+    min-width: 180px;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0,0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.Dropdown-menu li{
+    width: 100%;
+    display: block;
+}
+
+.Dropdown-menu li a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    white-space: nowrap;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Dropdown-menu li a:hover {
+    background-color: ebdcb9;
+}
+
+.dropdown-item a:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-item .Dropdown-menu{
+    display: none !important;
+}
+
+
+.arrow{
+    font-size: 15px;
+    margin-left: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+
+.site-footer {
+  background: #0b0b67;
+  padding: 40px 5% 20px 5%;
+  color: #333;
+  font-family: 'Georgia', serif;
+  border-top: 1px solid #e4e1dc;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-column{
+  flex: 1;
+  min-width: 200px;
+}
+
+.brand-infos h3{
+  color: white;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.brand-infos p{
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+.footer-column h4{
+  color: #fae935;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footer-column ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+  outline: none;
+}
+
+.footer-column ul li a:hover {
+  color: #114c33;
+}
+
+.contact-info h4{
+color: #fae935;
+}
+
+.contact-info p{
+  color: white;
+}
+
+.contact-icon{
+  color: #e59b3c;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+.footer-bottom{
+  text-align: center;
+  border-top: 1px solid #e4e1dc;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 13px;
+  color: white;
+}
+
+.dropdown-item.show-dropdown .Dropdown-menu{
+    display: flex !important;
+}

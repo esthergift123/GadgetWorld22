@@ -1,0 +1,95 @@
+/* --- Global Styles --- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #051c3e;
+    color: #333;
+}
+
+/* --- Container --- */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* --- Intro Header --- */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #ea87c3;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #f884c5;
+    font-size: 16px;
+}
+
+/* --- Grid Layout (3 Columns on Desktop, Responsive on Mobile) --- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* --- Individual Product Card --- */
+.product-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Subtle hover effect to make cards feel interactive */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.card-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #0056b3;
+}
